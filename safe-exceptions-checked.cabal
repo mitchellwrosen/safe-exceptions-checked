@@ -36,3 +36,15 @@ library
   exposed-modules:
       Control.Exception.Safe.Checked
   default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base
+    , hspec
+    , safe-exceptions-checked
+  default-language: Haskell2010
