@@ -191,4 +191,4 @@ uncheck _ m = unWrap (coerceWrap (Wrap m :: Wrap e a))
 --
 -- @since 0.1.0
 uncheckImpure :: forall a e proxy. proxy e -> (ThrowsImpure e => a) -> a
-uncheckImpure _ m = unWrapImpure (coerceWrapImpure (WrapImpure m :: WrapImpure e a)) -- (WrapImpure :: (ThrowsImpure e => a) -> WrapImpure e a)
+uncheckImpure _ m = unWrapImpure (coerceWrapImpure (WrapImpure m :: WrapImpure e a))
