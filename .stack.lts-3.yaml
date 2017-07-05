@@ -1,3 +1,0 @@
-resolver: lts-3.22
-extra-deps:
-  - safe-exceptions-0.1.4.0
